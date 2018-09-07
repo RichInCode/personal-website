@@ -74,63 +74,27 @@ class Home extends React.Component {
 
                 <div className="col-sm-12 col-lg-9">
                   <div className="text-center">
-                    I am a software developer with several years of experience
-                    in web application development. My strengths lie in
-                    architecting robust solutions that become a solid foundation
-                    for extensibility and reusability. With a strong academic
-                    background in Mathematics, I take my love for problem
-                    solving into everything I do. I have strong industry
-                    experience developing enterprise level applications with
-                    large organizations like{" "}
+                    I am a Data Scientist with a strong engineering background
+                    working with modern cloud architecture and tools.  I have built upon
+                    my experiences working as a Physicist and Researcher working as
+                    an Experimentalist, analyzing big data collected from nuclear colliders
+                    as well as worked on designing the next generation of collider experiments,
+                    by entering industry.
+                    I have experience working as a Data Scientist at a publishing company {" "}
                     <span style={{ color: "dodgerblue" }}>
-                      Raymond James Financial
-                    </span>{" "}
-                    and{" "}
-                    <span style={{ color: "dodgerblue" }}>CA Technologies</span>.{" "}
+                    Rodale
+                    </span>{" "}, focusing
+                    on determining the main revenue drivers for the digital side of the business
+                    (advertising, web products, e-commerce).
+                    I also have experience working as an Engineer on the business platform team at 
+                    CA Technologies, working to make scalable, highly available, intelligent, 
+                    self-service web applications supporting business operations.
+                    My strenghts include software development in Python, data wrangling, applying 
+                    machine learning, and working with graph databases (specifically Neo4j).
+                    Basically I just like to figure stuff out and good at doing so.
+                    Flexible, agile, able to adapt and change.
                   </div>
                 </div>
-              </div>
-            </div>
-          </section>
-        </Element>
-
-        <Element name="CodeSamples">
-          <section className="CodeSamples">
-            <div className="text-center">
-              <Heading>Projects</Heading>
-            </div>
-            <div className="container">
-              <div className="row">
-                <PortfolioItem
-                  imageSrc={"/static/images/dashboard3.png"}
-                  title="React Dashboard Starter"
-                  description="This project was created as a portfolio piece to display the use of React, React Router, Bootstrap 4, and Chart.js."
-                  tags={[
-                    "React",
-                    "React Router",
-                    "Bootstrap 4",
-                    "Sass",
-                    "Webpack"
-                  ]}
-                  demoLink="https://objective-northcutt-d138c8.netlify.com/"
-                  githubLink="https://github.com/ldcaponi/react-dashboard-starter"
-                />
-
-                <PortfolioItem
-                  inverted
-                  imageSrc={"/static/images/my-website.png"}
-                  title="My Personal Website"
-                  description="This project was built using Next JS utilizing server-rendered React.  Planning on integrating a blog soon, so using Next with static site generation is a clear choice."
-                  tags={[
-                    "Next",
-                    "React",
-                    ,
-                    "Bootstrap 4",
-                    "Sass",
-                    "Static Site Generation"
-                  ]}
-                  githubLink="https://github.com/ldcaponi/personal-website"
-                />
               </div>
             </div>
           </section>
@@ -148,6 +112,48 @@ class Home extends React.Component {
                     {i}
                   </Tag>
                 ))}
+              </div>
+            </div>
+          </section>
+        </Element>
+
+        <Element name="CodeSamples">
+          <section className="CodeSamples">
+            <div className="text-center">
+              <Heading>Projects</Heading>
+            </div>
+            <div className="container">
+              <div className="row">
+                <PortfolioItem
+                  imageSrc={"/static/images/citibikeappscreen.PNG"}
+                  title="Citi Bike Helper App"
+                  description="This project was my Capstone project from my time at The Data Incubator.  It invovled created an applicition to puruse data from Citi Bike Sharing in NYC and included a model to predict ride demand in particular areas of the city."
+                  tags={[
+                    "Python",
+                    "Flask",
+                    "Heroku",
+                    "Pandas",
+                    "Scikit-learn"
+                  ]}
+                  demoLink="http://citibikehelper.herokuapp.com/"
+                  githubLink="https://github.com/RichInCode/CitiBikeApp"
+                />
+
+                <PortfolioItem
+                  inverted
+                  imageSrc={"/static/images/my-website.png"}
+                  title="My Personal Website"
+                  description="This project was built using Next JS utilizing server-rendered React.  Planning on integrating a blog soon, so using Next with static site generation is a clear choice."
+                  tags={[
+                    "Next",
+                    "React",
+                    ,
+                    "Bootstrap 4",
+                    "Sass",
+                    "Static Site Generation"
+                  ]}
+                  githubLink="https://github.com/ldcaponi/personal-website"
+                />
               </div>
             </div>
           </section>

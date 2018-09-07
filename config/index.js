@@ -18,18 +18,16 @@ export const homepageLinks = [
 ];
 
 export const skills = [
-  "JavaScript",
-  "React",
-  "Angular JS",
-  "Vue JS",
-  "Node.js",
-  "Express",
-  "MongoDB",
-  "Jest",
-  "Sass",
-  "Webpack",
-  "HTML",
-  "CSS",
+  "Python",
+  "C++",
+  "Pandas",
+  "Scikit-learn",
+  "Flask",
+  "Django",
+  "Neo4j",
+  "MS SQL Server/Data Warehouse",
+  "Postgres",
+  "Azure",
+  "AWS",
   "Git",
-  "Azure CI/CD"
 ];
