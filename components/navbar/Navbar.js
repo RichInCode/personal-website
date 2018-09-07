@@ -8,7 +8,7 @@ const Navbar = props => {
   return (
     <nav className="Navbar">
       <div className="center-vertically DIB pl15">
-        <CircleLogo>LC</CircleLogo>
+        <CircleLogo>RP</CircleLogo>
       </div>
       <LinkList links={homepageLinks} style={{ float: "right" }} />
     </nav>

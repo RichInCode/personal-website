@@ -17,17 +17,17 @@ class Home extends React.Component {
     return (
       <div className="Home">
         <Head>
-          <title>Lou Caponi - Software Developer</title>
-          <meta property="og:title" content="Lou Caponi - Software Developer" />
+          <title>Richard Petti - Data Scientist, Data Engineer, and Physicst</title>
+          <meta property="og:title" content="Richard Petti - Data Scientist, Data Engineer, and Physicst" />
           <meta
             property="og:description"
-            content="JavaScript Developer from Long Island, New York with a strong focus on modern frontend libraries, frameworks, and tooling."
+            content="Data Scientist and Engineer from Long Island, New York with a strong focus on modern frontend libraries, frameworks, and tooling."
           />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://www.loucaponi.com" />
           <meta
             property="og:image"
-            content="https://www.loucaponi.com/static/images/bg.jpeg"
+            content="../static/images/216577_203323719700899_6479271_n.jpg"
           />
         </Head>
         <section className="Header">
@@ -39,17 +39,16 @@ class Home extends React.Component {
             </Headroom>
             <div className="callout center-all">
               <Fade bottom>
-                <div className="my-name">Lou Caponi</div>
+                <div className="my-name">Richard Petti</div>
               </Fade>{" "}
               <span className="spacer" />
-              <div className="my-title">Software Developer</div>
+              <div className="my-title">Data Scientist, Data Engineer, and Physicst</div>
               <div className="my-description">
-                JavaScript Developer from Long Island, New York with a strong
-                focus on modern frontend libraries, frameworks, and tooling.
+                Data Scientist from Long Island, New York with a strong background in Engineering and supporting application services in the cloud.
               </div>
               <div className="my-resume">
                 <a
-                  href="/static/files/Resume__Caponi_Lou.pdf"
+                  href="/static/files/data_scientist_resume_petti.pdf"
                   target="_blank"
                   className="button button-primary button-pill"
                 >

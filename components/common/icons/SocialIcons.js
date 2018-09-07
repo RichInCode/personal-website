@@ -5,12 +5,12 @@ const SocialIcons = props => {
   return (
     <div className="SocialIcons">
       <a
-        href="https://www.linkedin.com/in/louis-caponi-339828a5/"
+        href="https://www.linkedin.com/in/richpetti/"
         target="_blank"
       >
         <img src="/static/images/linkedin.png" alt="linkedin" />
       </a>
-      <a href="https://www.github.com/ldcaponi" target="_blank">
+      <a href="https://www.github.com/richincode" target="_blank">
         <img src="/static/images/github.png" alt="linkedin" />
       </a>
     </div>
