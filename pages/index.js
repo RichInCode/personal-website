@@ -143,12 +143,11 @@ class Home extends React.Component {
                   title="Personal Finance Tool"
                   description="This project was the crux of my PhD dissertation, where I made a unique contribution to the scientific body of information on the Quark Gluon Plasma.  I developed a novel photon identification technique which allowed first time access to the energy range measured.  The technique I pioneered was applied to many other data sets by students and researchers following my lead."
                   tags={[
-                    "C++",
-                    "ROOT",
-                    "Condor",
-                    "GEANT",
-                    "Monte-carlo simulations",
-                    "Fourier analysis"
+                    "D3",
+                    "HTML",
+                    "PHP",
+                    "MySQL",
+                    "WAMP server"
                   ]}
                   thesisLink="/static/files/Petti_Richard-thesis.pdf"
                   githubLink="https://github.com/RichInCode/phenix_code"
