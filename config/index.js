@@ -1,15 +1,15 @@
 export const homepageLinks = [
   {
+    text: "Skills",
+    scrollTo: "Skills"
+  },
+  {
     text: "About",
     scrollTo: "AboutMe"
   },
   {
     text: "Projects",
     scrollTo: "CodeSamples"
-  },
-  {
-    text: "Skills",
-    scrollTo: "Skills"
   },
   {
     text: "Contact",
@@ -22,6 +22,7 @@ export const skills = [
   "C++",
   "Pandas",
   "Scikit-learn",
+  "ROOT",
   "Flask",
   "Django",
   "Neo4j",

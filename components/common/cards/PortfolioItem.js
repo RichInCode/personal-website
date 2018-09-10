@@ -23,6 +23,8 @@ const PortfolioItem = ({
   imageSrc,
   demoLink,
   githubLink,
+  thesisLink,
+  presentationLink,
   inverted
 }) => {
   return (
@@ -46,6 +48,24 @@ const PortfolioItem = ({
               target="_blank"
             >
               View Demo
+            </a>
+          )}
+          {thesisLink && (
+            <a
+              href={thesisLink}
+              className="button button-primary button-pill"
+              target="_blank"
+            >
+              View Thesis
+            </a>
+          )}
+          {presentationLink && (
+            <a
+              href={presentationLink}
+              className="button button-primary button-pill"
+              target="_blank"
+            >
+              View Presentation
             </a>
           )}
         </div>

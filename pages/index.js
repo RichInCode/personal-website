@@ -62,6 +62,23 @@ class Home extends React.Component {
           </div>
         </section>
 
+        <Element name="Skills">
+          <section className="Skills">
+            <div className="text-center">
+              <Heading>Skills</Heading>
+            </div>
+            <div className="container">
+              <div className="row">
+                {skills.map(i => (
+                  <Tag style={{ margin: "0 auto" }} key={i}>
+                    {i}
+                  </Tag>
+                ))}
+              </div>
+            </div>
+          </section>
+        </Element>
+
         <Element name="AboutMe">
           <section className="AboutMe">
             <div className="container">
@@ -100,23 +117,6 @@ class Home extends React.Component {
           </section>
         </Element>
 
-        <Element name="Skills">
-          <section className="Skills">
-            <div className="text-center">
-              <Heading>Skills</Heading>
-            </div>
-            <div className="container">
-              <div className="row">
-                {skills.map(i => (
-                  <Tag style={{ margin: "0 auto" }} key={i}>
-                    {i}
-                  </Tag>
-                ))}
-              </div>
-            </div>
-          </section>
-        </Element>
-
         <Element name="CodeSamples">
           <section className="CodeSamples">
             <div className="text-center">
@@ -138,21 +138,49 @@ class Home extends React.Component {
                   demoLink="http://citibikehelper.herokuapp.com/"
                   githubLink="https://github.com/RichInCode/CitiBikeApp"
                 />
-
                 <PortfolioItem
-                  inverted
-                  imageSrc={"/static/images/my-website.png"}
-                  title="My Personal Website"
-                  description="This project was built using Next JS utilizing server-rendered React.  Planning on integrating a blog soon, so using Next with static site generation is a clear choice."
+                  imageSrc={"/static/images/personal_finance_app.PNG"}
+                  title="Personal Finance Tool"
+                  description="This project was the crux of my PhD dissertation, where I made a unique contribution to the scientific body of information on the Quark Gluon Plasma.  I developed a novel photon identification technique which allowed first time access to the energy range measured.  The technique I pioneered was applied to many other data sets by students and researchers following my lead."
                   tags={[
-                    "Next",
-                    "React",
-                    ,
-                    "Bootstrap 4",
-                    "Sass",
-                    "Static Site Generation"
+                    "C++",
+                    "ROOT",
+                    "Condor",
+                    "GEANT",
+                    "Monte-carlo simulations",
+                    "Fourier analysis"
                   ]}
-                  githubLink="https://github.com/ldcaponi/personal-website"
+                  thesisLink="/static/files/Petti_Richard-thesis.pdf"
+                  githubLink="https://github.com/RichInCode/phenix_code"
+                />
+                <PortfolioItem
+                  imageSrc={"/static/images/erhic_design.PNG"}
+                  title="Integrating the Design of Detectors and Collider Interaction Region for an Electron-Ion Collider"
+                  description="This is the main project I worked on as a post-doc at Brookhaven National Lab under a grant by the US DOE.  The scope was to design critical detector components "
+                  tags={[
+                    "C++",
+                    "Python",
+                    "EicROOT",
+                    "Condor",
+                    "GEANT",
+                    "Monte-carlo simulations"
+                  ]}
+                />
+                <PortfolioItem
+                  imageSrc={"/static/images/r_gamma_each_cent_final.PNG"}
+                  title="Direct Photons as a Probe of Heavy Ion Collisions"
+                  description="This project was the crux of my PhD dissertation, where I made a unique contribution to the scientific body of information on the Quark Gluon Plasma.  I developed a novel photon identification technique which allowed first time access to the energy range measured.  The technique I pioneered was applied to many other data sets by students and researchers following my lead."
+                  tags={[
+                    "C++",
+                    "ROOT",
+                    "Condor",
+                    "GEANT",
+                    "Monte-carlo simulations",
+                    "Fourier analysis"
+                  ]}
+                  thesisLink="/static/files/Petti_Richard-thesis.pdf"
+                  githubLink="https://github.com/RichInCode/phenix_code"
+                  presentationLink="https://indico.cern.ch/event/355454/contributions/838702/attachments/1161875/1673201/petti_QM15_thermalPhotons_v2.pdf"
                 />
               </div>
             </div>
@@ -167,7 +195,7 @@ class Home extends React.Component {
               <div className="col-sm-8">
                 <form
                   className="pure-form"
-                  action="https://formspree.io/ldcaponi@gmail.com"
+                  action="https://formspree.io/richard.petti@gmail.com"
                   method="POST"
                 >
                   <fieldset className="pure-group">
