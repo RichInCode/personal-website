@@ -104,7 +104,9 @@ class Home extends React.Component {
                     on determining the main revenue drivers for the digital side of the business
                     (advertising, web products, e-commerce).
                     I also have experience working as an Engineer on the business platform team at 
-                    CA Technologies, working to make scalable, highly available, intelligent, 
+                    <span style={{ color: "dodgerblue" }}>
+                    CA Technologies
+                    </span>{" "}, working to make scalable, highly available, intelligent, 
                     self-service web applications supporting business operations.
                     My strenghts include software development in Python, data wrangling, applying 
                     machine learning, and working with graph databases (specifically Neo4j).
@@ -141,7 +143,7 @@ class Home extends React.Component {
                 <PortfolioItem
                   imageSrc={"/static/images/personal_finance_app.PNG"}
                   title="Personal Finance Tool"
-                  description="This project was the crux of my PhD dissertation, where I made a unique contribution to the scientific body of information on the Quark Gluon Plasma.  I developed a novel photon identification technique which allowed first time access to the energy range measured.  The technique I pioneered was applied to many other data sets by students and researchers following my lead."
+                  description="This was just a fun side project to help build a tool for my family to use to keep track of personal expenses."
                   tags={[
                     "D3",
                     "HTML",
@@ -149,8 +151,7 @@ class Home extends React.Component {
                     "MySQL",
                     "WAMP server"
                   ]}
-                  thesisLink="/static/files/Petti_Richard-thesis.pdf"
-                  githubLink="https://github.com/RichInCode/phenix_code"
+                  githubLink="https://github.com/RichInCode/personalFinanceTool"
                 />
                 <PortfolioItem
                   imageSrc={"/static/images/erhic_design.PNG"}
