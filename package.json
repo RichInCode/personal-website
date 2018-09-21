@@ -6,7 +6,8 @@
   "dependencies": {
     "@zeit/next-sass": "^0.2.0",
     "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react-dom": "^16.4.2",
+    "react-modal": "^3.5.1"
   },
   "devDependencies": {
     "next": "^6.1.2",

@@ -10,9 +10,48 @@ import Tag from "../components/common/cards/Tag";
 import { skills } from "../config";
 import SocialIcons from "../components/common/icons/SocialIcons";
 import Headroom from "react-headroom";
+import Modal from 'react-modal';
 import "./Home.scss";
 
+const customStyles = {
+  content : {
+    top                   : '50%',
+    left                  : '50%',
+    right                 : 'auto',
+    bottom                : 'auto',
+    marginRight           : '-50%',
+    transform             : 'translate(-50%, -50%)'
+  }
+};
+
+// Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
+
 class Home extends React.Component {
+  constructor() {
+    super();
+ 
+    this.state = {
+      modalIsOpen: false
+    };
+ 
+    this.openModal = this.openModal.bind(this);
+    this.afterOpenModal = this.afterOpenModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+  }
+ 
+  openModal() {
+    this.setState({modalIsOpen: true});
+  }
+ 
+  afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    this.subtitle.style.color = '#f00';
+  }
+ 
+  closeModal() {
+    this.setState({modalIsOpen: false});
+  }
+
   render() {
     return (
       <div className="Home">
@@ -100,13 +139,13 @@ class Home extends React.Component {
                     I have experience working as a Data Scientist at a publishing company {" "}
                     <span style={{ color: "dodgerblue" }}>
                     Rodale
-                    </span>{" "}, focusing
+                    </span>, focusing
                     on determining the main revenue drivers for the digital side of the business
                     (advertising, web products, e-commerce).
-                    I also have experience working as an Engineer on the business platform team at 
+                    I also have experience working as an Engineer on the business platform team at {" "}
                     <span style={{ color: "dodgerblue" }}>
                     CA Technologies
-                    </span>{" "}, working to make scalable, highly available, intelligent, 
+                    </span>, working to make scalable, highly available, intelligent, 
                     self-service web applications supporting business operations.
                     My strenghts include software development in Python, data wrangling, applying 
                     machine learning, and working with graph databases (specifically Neo4j).
@@ -183,6 +222,34 @@ class Home extends React.Component {
                   presentationLink="https://indico.cern.ch/event/355454/contributions/838702/attachments/1161875/1673201/petti_QM15_thermalPhotons_v2.pdf"
                 />
               </div>
+            </div>
+          </section>
+        </Element>
+
+        <Element name="FullCV">
+          <section className="CV">
+            <div className="text-center">
+              <Heading>Full CV</Heading>
+                <button className="button button-pill" onClick={this.openModal}>Open Modal</button>
+                <Modal
+                  isOpen={this.state.modalIsOpen}
+                  onAfterOpen={this.afterOpenModal}
+                  onRequestClose={this.closeModal}
+                  style={customStyles}
+                  contentLabel="Example Modal"
+                >
+ 
+                <h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>
+                <button onClick={this.closeModal}>close</button>
+                <div>I am a modal</div>
+                <form>
+                  <input />
+                  <button>tab navigation</button>
+                  <button>stays</button>
+                  <button>inside</button>
+                  <button>the modal</button>
+                </form>
+              </Modal>
             </div>
           </section>
         </Element>
