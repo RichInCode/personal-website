@@ -14,7 +14,7 @@ export const homepageLinks = [
   {
     text: "Contact",
     scrollTo: "Contact"
-  }
+  },
 ];
 
 export const skills = [
