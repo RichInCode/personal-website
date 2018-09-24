@@ -7,7 +7,7 @@ import SocialIcons from "../components/common/icons/SocialIcons";
 import Headroom from "react-headroom";
 import { Element } from "react-scroll";
 import { Accordion, AccordionItem } from 'react-sanfona'
-import "./react-sanfona.scss";
+//import "./react-sanfona.scss";
 
 class Resume extends React.Component {
   constructor(props) {
