@@ -37,7 +37,7 @@ const PortfolioItem = ({
         <div className="tags-container">{tags.map(i => <Tag>{i}</Tag>)}</div>
         <div className="button-row">
           {githubLink && (
-            <a href={githubLink} className="button button-pill" target="_blank">
+            <a href={githubLink} className="button button-primary button-pill" target="_blank">
               View on GitHub
             </a>
           )}

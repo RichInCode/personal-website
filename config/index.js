@@ -1,19 +1,19 @@
 export const homepageLinks = [
   {
-    text: "Skills",
-    scrollTo: "Skills"
-  },
-  {
     text: "About",
     scrollTo: "AboutMe"
   },
   {
-    text: "Projects",
-    scrollTo: "CodeSamples"
+    text: "Skills",
+    scrollTo: "Skills"
   },
   {
     text: "Full History",
     scrollTo: "FullHistory"
+  },
+  {
+    text: "Projects",
+    scrollTo: "CodeSamples"
   },
   {
     text: "Contact",

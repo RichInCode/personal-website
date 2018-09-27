@@ -79,23 +79,6 @@ class Home extends React.Component {
           </div>
         </section>
 
-        <Element name="Skills">
-          <section className="Skills">
-            <div className="text-center">
-              <Heading>Skills</Heading>
-            </div>
-            <div className="container">
-              <div className="row">
-                {skills.map(i => (
-                  <Tag style={{ margin: "0 auto" }} key={i}>
-                    {i}
-                  </Tag>
-                ))}
-              </div>
-            </div>
-          </section>
-        </Element>
-
         <Element name="AboutMe">
           <section className="AboutMe">
             <div className="container">
@@ -110,8 +93,7 @@ class Home extends React.Component {
                   <div className="text-center">
                     I am a Data Scientist with a strong engineering background
                     working with modern cloud architecture and tools.  I have built upon
-                    my experiences working as a Physicist and Researcher working as
-                    an Experimentalist, analyzing big data collected from nuclear colliders
+                    my experiences working as a Physicist and Researcher, analyzing big data collected from nuclear colliders
                     as well as worked on designing the next generation of collider experiments,
                     by entering industry.
                     I have experience working as a Data Scientist at a publishing company {" "}
@@ -132,6 +114,143 @@ class Home extends React.Component {
                   </div>
                 </div>
               </div>
+            </div>
+          </section>
+        </Element>
+
+        <Element name="Skills">
+          <section className="Skills">
+            <div className="text-center">
+              <Heading>Skills</Heading>
+            </div>
+            <div className="container">
+              <div className="row">
+                {skills.map(i => (
+                  <Tag style={{ margin: "0 auto" }} key={i}>
+                    {i}
+                  </Tag>
+                ))}
+              </div>
+            </div>
+          </section>
+        </Element>
+
+        <Element name="FullHistory">
+          <section className="FullHistory">
+            <div className="text-center">
+              <Heading>Full History</Heading>
+            </div>
+            <div className="container">
+              <VerticalTimeline>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  date="August 2017"
+                  iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                  icon={<WorkIcon />}
+                >
+                  <h3 className="vertical-timeline-element-title">Principal, Data Engineer</h3>
+                  <h4 className="vertical-timeline-element-subtitle">CA Technologies</h4>
+                  <hr></hr>
+                  <p>
+                    Backend engineer on the business platform team designing, developing, maintaining and debugging backend services supporting the web applications built for the internal sales, marketing, and executive teams.  Main projects include a contact targeting system, a sales and marketing campaign planning tool, and a data catalog tool including an ontological layer.
+                  </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  date="March 2017"
+                  iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                  icon={<WorkIcon />}
+                >
+                  <h3 className="vertical-timeline-element-title">Data Scientist</h3>
+                  <h4 className="vertical-timeline-element-subtitle">Rodale</h4>
+                  <hr></hr>
+                  <p>
+                    Data Scientist on the Data Science and Growth team, focused on driving investigations to determine the specific content that are the strongest revenue drivers.  I had many responsibilities including:
+                  </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--education"
+                  date="March 2016"
+                  iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                  icon={<SchoolIcon />}
+                >
+                  <h3 className="vertical-timeline-element-title">Fellow at the Data Incubator</h3>
+                  <h4 className="vertical-timeline-element-subtitle">Graduate</h4>
+                  <hr></hr>
+                  <p>
+                    Graduate of the Data Science bootcamp The Data Incubator.
+                  </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  date="August 2014"
+                  iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                  icon={<WorkIcon />}
+                >
+                  <h3 className="vertical-timeline-element-title">Research Associate/Physicist</h3>
+                  <h4 className="vertical-timeline-element-subtitle">Brookhaven National Lab</h4>
+                  <hr></hr>
+                  <p>
+                    Physicst and research scientist designing the next generation of experiments planned at the laboratory.
+                  </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  date="December 2013"
+                  iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                  icon={<WorkIcon />}
+                >
+                  <h3 className="vertical-timeline-element-title">Research Associate/Physicist</h3>
+                  <h4 className="vertical-timeline-element-subtitle">Stony Brook University</h4>
+                  <hr></hr>
+                  <p>
+                    Physicist and researcher doing data analysis using data collected from the PHENIX experiment at Brookhaven National Lab.
+                  </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--education"
+                  date="December 2013"
+                  iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                  icon={<SchoolIcon />}
+                >
+                  <h3 className="vertical-timeline-element-title">PhD in Physics</h3>
+                  <h4 className="vertical-timeline-element-subtitle">Stony Brook University</h4>
+                  <hr></hr>
+                  <p>
+                    PhD in the field of nuclear physics, doing big data analysis on data collected by the PHENIX experiment located at Brookhaven National Lab.
+                  </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  date="June 2006"
+                  iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                  icon={<WorkIcon />}
+                >
+                  <h3 className="vertical-timeline-element-title">Research Assistant/Physicist</h3>
+                  <h4 className="vertical-timeline-element-subtitle">Stony Brook University</h4>
+                  <hr></hr>
+                  <p>
+                    Physicist and researcher doing data analysis using data collected from the PHENIX experiment at Brookhaven National Lab.
+                  </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--education"
+                  date="May 2005"
+                  iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                  icon={<SchoolIcon />}
+                >
+                  <h3 className="vertical-timeline-element-title">BS in Physics and Mathematics</h3>
+                  <h4 className="vertical-timeline-element-subtitle">Stony Brook University</h4>
+                  <hr></hr>
+                  <p>
+                    
+                  </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+                  icon={<StarIcon />}
+                />
+              </VerticalTimeline>
             </div>
           </section>
         </Element>
@@ -200,113 +319,6 @@ class Home extends React.Component {
                   presentationLink="https://indico.cern.ch/event/355454/contributions/838702/attachments/1161875/1673201/petti_QM15_thermalPhotons_v2.pdf"
                 />
               </div>
-            </div>
-          </section>
-        </Element>
-
-        <Element name="FullHistory">
-          <section className="FullHistory">
-            <div className="text-center">
-              <Heading>Full History</Heading>
-            </div>
-            <div className="container">
-              <VerticalTimeline>
-                <VerticalTimelineElement
-                  className="vertical-timeline-element--work"
-                  date="August 2017 - present"
-                  iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                  icon={<WorkIcon />}
-                >
-                  <h3 className="vertical-timeline-element-title">Principal, Data Engineer</h3>
-                  <h4 className="vertical-timeline-element-subtitle">CA Technologies</h4>
-                  <hr></hr>
-                  <p>
-                    Backend engineer on the business platform team designing, developing, maintaining and debugging backend services supporting the web applications built for the internal sales, marketing, and executive teams.  Main projects include a contact targeting system, a sales and marketing campaign planning tool, and a data catalog tool including an ontological layer.
-                  </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                  className="vertical-timeline-element--work"
-                  date="March 2017 - August 2017"
-                  iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                  icon={<WorkIcon />}
-                >
-                  <h3 className="vertical-timeline-element-title">Data Scientist</h3>
-                  <h4 className="vertical-timeline-element-subtitle">Rodale</h4>
-                  <hr></hr>
-                  <p>
-                    Data Scientist on the Data Science and Growth team, focused on driving investigations to determine the specific content that are the strongest revenue drivers.  I had many responsibilities including:
-                  </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                  className="vertical-timeline-element--work"
-                  date="August 2014 - March 2017"
-                  iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                  icon={<WorkIcon />}
-                >
-                  <h3 className="vertical-timeline-element-title">Research Associate/Physicist</h3>
-                  <h4 className="vertical-timeline-element-subtitle">Brookhaven National Lab</h4>
-                  <hr></hr>
-                  <p>
-                    Physicst and research scientist designing the next generation of experiments planned at the laboratory.
-                  </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                  className="vertical-timeline-element--work"
-                  date="December 2013 - August 2014"
-                  iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                  icon={<WorkIcon />}
-                >
-                  <h3 className="vertical-timeline-element-title">Research Associate/Physicist</h3>
-                  <h4 className="vertical-timeline-element-subtitle">Stony Brook University</h4>
-                  <hr></hr>
-                  <p>
-                    Physicist and researcher doing data analysis using data collected from the PHENIX experiment at Brookhaven National Lab.
-                  </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                  className="vertical-timeline-element--education"
-                  date="April 2013"
-                  iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                  icon={<SchoolIcon />}
-                >
-                  <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-                  <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-                  <hr></hr>
-                  <p>
-                    Strategy, Social Media
-                  </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                  className="vertical-timeline-element--education"
-                  date="November 2012"
-                  iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                  icon={<SchoolIcon />}
-                >
-                  <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-                  <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-                  <hr></hr>
-                  <p>
-                    Creative Direction, User Experience, Visual Design
-                  </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                  className="vertical-timeline-element--education"
-                  date="2002 - 2006"
-                  iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                  icon={<SchoolIcon />}
-                >
-                  <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-                  <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-                  <hr></hr>
-                  <p>
-                    Creative Direction, Visual Design
-                  </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                  iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                  icon={<StarIcon />}
-                />
-              </VerticalTimeline>
             </div>
           </section>
         </Element>
