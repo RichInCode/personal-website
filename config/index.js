@@ -12,9 +12,13 @@ export const homepageLinks = [
     scrollTo: "CodeSamples"
   },
   {
+    text: "Full History",
+    scrollTo: "FullHistory"
+  },
+  {
     text: "Contact",
     scrollTo: "Contact"
-  },
+  }
 ];
 
 export const skills = [

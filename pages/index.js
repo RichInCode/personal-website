@@ -11,6 +11,7 @@ import { skills } from "../config";
 import SocialIcons from "../components/common/icons/SocialIcons";
 import WorkIcon from "../components/common/icons/WorkIcon";
 import SchoolIcon from "../components/common/icons/SchoolIcon";
+import StarIcon from "../components/common/icons/StarIcon";
 import Headroom from "react-headroom";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import "./Home.scss";
@@ -212,50 +213,54 @@ class Home extends React.Component {
               <VerticalTimeline>
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
-                  date="2011 - present"
+                  date="August 2017 - present"
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   icon={<WorkIcon />}
                 >
-                  <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                  <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+                  <h3 className="vertical-timeline-element-title">Principal, Data Engineer</h3>
+                  <h4 className="vertical-timeline-element-subtitle">CA Technologies</h4>
+                  <hr></hr>
                   <p>
-                    Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+                    Backend engineer on the business platform team designing, developing, maintaining and debugging backend services supporting the web applications built for the internal sales, marketing, and executive teams.  Main projects include a contact targeting system, a sales and marketing campaign planning tool, and a data catalog tool including an ontological layer.
                   </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
-                  date="2010 - 2011"
+                  date="March 2017 - August 2017"
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   icon={<WorkIcon />}
                 >
-                  <h3 className="vertical-timeline-element-title">Art Director</h3>
-                  <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+                  <h3 className="vertical-timeline-element-title">Data Scientist</h3>
+                  <h4 className="vertical-timeline-element-subtitle">Rodale</h4>
+                  <hr></hr>
                   <p>
-                    Creative Direction, User Experience, Visual Design, SEO, Online Marketing
+                    Data Scientist on the Data Science and Growth team, focused on driving investigations to determine the specific content that are the strongest revenue drivers.  I had many responsibilities including:
                   </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
-                  date="2008 - 2010"
+                  date="August 2014 - March 2017"
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   icon={<WorkIcon />}
                 >
-                  <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                  <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
+                  <h3 className="vertical-timeline-element-title">Research Associate/Physicist</h3>
+                  <h4 className="vertical-timeline-element-subtitle">Brookhaven National Lab</h4>
+                  <hr></hr>
                   <p>
-                    User Experience, Visual Design
+                    Physicst and research scientist designing the next generation of experiments planned at the laboratory.
                   </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
-                  date="2006 - 2008"
+                  date="December 2013 - August 2014"
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   icon={<WorkIcon />}
                 >
-                  <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                  <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+                  <h3 className="vertical-timeline-element-title">Research Associate/Physicist</h3>
+                  <h4 className="vertical-timeline-element-subtitle">Stony Brook University</h4>
+                  <hr></hr>
                   <p>
-                    User Experience, Visual Design
+                    Physicist and researcher doing data analysis using data collected from the PHENIX experiment at Brookhaven National Lab.
                   </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -266,6 +271,7 @@ class Home extends React.Component {
                 >
                   <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
                   <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
+                  <hr></hr>
                   <p>
                     Strategy, Social Media
                   </p>
@@ -278,6 +284,7 @@ class Home extends React.Component {
                 >
                   <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
                   <h4 className="vertical-timeline-element-subtitle">Certification</h4>
+                  <hr></hr>
                   <p>
                     Creative Direction, User Experience, Visual Design
                   </p>
@@ -290,13 +297,14 @@ class Home extends React.Component {
                 >
                   <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
                   <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
+                  <hr></hr>
                   <p>
                     Creative Direction, Visual Design
                   </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                   iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                  icon={<WorkIcon />}
+                  icon={<StarIcon />}
                 />
               </VerticalTimeline>
             </div>
