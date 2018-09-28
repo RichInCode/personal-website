@@ -320,35 +320,40 @@ class Home extends React.Component {
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   icon={<WorkIcon />}
                   >
-                  <Tag style={{ margin: "0 auto" }} key={'Python'}>
-                  Python
-                  </Tag>
-                  <Tag style={{ margin: "0 auto" }} key={'C'}>
-                  C++
-                  </Tag>
-                  <Tag style={{ margin: "0 auto" }} key={'ROOT'}>
-                  ROOT
-                  </Tag>
-                  <Tag style={{ margin: "0 auto" }} key={'GEANT'}>
-                  GEANT
-                  </Tag>
-                  <Tag style={{ margin: "0 auto" }} key={'Condor'}>
-                  Condor
-                  </Tag>
-                  <Tag style={{ margin: "0 auto" }} key={'SVN'}>
-                  CVS
-                  </Tag>
-                  <Tag style={{ margin: "0 auto" }} key={'BASH'}>
-                  BASH
-                  </Tag>
-                  <Tag style={{ margin: "0 auto" }} key={'Doxygen'}>
-                  Doxygen
-                  </Tag>
+                  <div>
+                    <Tag style={{ margin: "0 auto" }} key={'Python'}>
+                    Python
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'C'}>
+                    C++
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'ROOT'}>
+                    ROOT
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'GEANT'}>
+                    GEANT
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'Condor'}>
+                    Condor
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'SVN'}>
+                    CVS
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'BASH'}>
+                    BASH
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'Doxygen'}>
+                    Doxygen
+                    </Tag>
+                  </div>
                   <h3 className="vertical-timeline-element-title">Research Associate/Physicist</h3>
                   <h4 className="vertical-timeline-element-subtitle">Brookhaven National Lab</h4>
                   <hr></hr>
                   <p>
-                    Physicst and research scientist designing the next generation of experiments planned at the laboratory (a planned $1B upgrade).  My focus was developing Monte Carlo simulations representing particle interactions with magnetic fields and materials in detector components.
+                    Physicst and research scientist designing the next generation of experiments planned at the laboratory (a planned $1B upgrade).  
+                    My focus was developing <span style={{ color: "dodgerblue" }}>
+                    Monte Carlo simulations
+                    </span> representing particle interactions with magnetic fields and materials in detector components (eg. <a href="https://wiki.bnl.gov/eic/index.php/Eicroot">EicROOT</a>).
                     I worked with the magnet and accelerator scientists to refine the layout of the interaction region in the accelerator and study how different detector configurations will affect the quality of various measurements that comprise the indended scientific program, as well as estimate the required run time to achieve a certain statistical precision.
                     <br></br><a href="https://www.bnl.gov/eic/">Main site</a>
                     <br></br><a href="https://wiki.bnl.gov/eic/index.php/Main_Page">Wiki page</a>
@@ -359,7 +364,7 @@ class Home extends React.Component {
                   date="December 2013"
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   icon={<WorkIcon />}
-                >
+                 >
                   <Tag style={{ margin: "0 auto" }} key={'C'}>
                   C++
                   </Tag>
@@ -390,7 +395,7 @@ class Home extends React.Component {
                   date="December 2013"
                   iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
                   icon={<SchoolIcon />}
-                >
+                  >
                   <h3 className="vertical-timeline-element-title">PhD in Physics</h3>
                   <h4 className="vertical-timeline-element-subtitle">Stony Brook University</h4>
                   <hr></hr>
@@ -403,7 +408,7 @@ class Home extends React.Component {
                   date="June 2006"
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   icon={<WorkIcon />}
-                >
+                  >
                   <h3 className="vertical-timeline-element-title">Research Assistant/Physicist</h3>
                   <h4 className="vertical-timeline-element-subtitle">Stony Brook University</h4>
                   <hr></hr>
@@ -416,7 +421,7 @@ class Home extends React.Component {
                   date="May 2005"
                   iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
                   icon={<SchoolIcon />}
-                >
+                 >
                   <h3 className="vertical-timeline-element-title">BS in Physics and Mathematics</h3>
                   <h4 className="vertical-timeline-element-subtitle">Stony Brook University</h4>
                   <hr></hr>
@@ -443,7 +448,7 @@ class Home extends React.Component {
                 <PortfolioItem name="capstone"
                   imageSrc={"/static/images/citibikeappscreen.PNG"}
                   title="Citi Bike Helper App"
-                  description="This project was my Capstone project from my time at The Data Incubator.  It invovled created an applicition to puruse data from Citi Bike Sharing in NYC and included a model to predict ride demand in particular areas of the city."
+                  description="This project was my Capstone project from my time at The Data Incubator.  It invovled created an applicition to peruse data from Citi Bike Sharing in NYC and included a model to predict ride demand in particular areas of the city."
                   tags={[
                     "Python",
                     "Flask",
