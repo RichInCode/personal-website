@@ -7,6 +7,7 @@ import Footer from "../components/footer/Footer";
 import { Element } from "react-scroll";
 import Head from "next/head";
 import Tag from "../components/common/cards/Tag";
+import RedTag from "../components/common/cards/RedTag";
 import { skills } from "../config";
 import SocialIcons from "../components/common/icons/SocialIcons";
 import WorkIcon from "../components/common/icons/WorkIcon";
@@ -148,6 +149,27 @@ class Home extends React.Component {
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   icon={<WorkIcon />}
                 >
+                  <Tag style={{ margin: "0 auto" }} key={'Azure'}>
+                  Azure
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'Python'}>
+                  Python
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'Flask'}>
+                  Flask
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'Neo4j'}>
+                  Neo4j
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'Redis'}>
+                  Redis
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'Nginx'}>
+                  Nginx
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'Git'}>
+                  Git
+                  </Tag>
                   <h3 className="vertical-timeline-element-title">Principal, Data Engineer</h3>
                   <h4 className="vertical-timeline-element-subtitle">CA Technologies</h4>
                   <hr></hr>
@@ -161,6 +183,24 @@ class Home extends React.Component {
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   icon={<WorkIcon />}
                 >
+                  <Tag style={{ margin: "0 auto" }} key={'AWS'}>
+                  AWS
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'Python'}>
+                  Python
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'Django'}>
+                  Django
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'R'}>
+                  R
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'BigQuery'}>
+                  BigQuery
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'Git'}>
+                   Git
+                  </Tag>
                   <h3 className="vertical-timeline-element-title">Data Scientist</h3>
                   <h4 className="vertical-timeline-element-subtitle">Rodale</h4>
                   <hr></hr>
@@ -174,8 +214,23 @@ class Home extends React.Component {
                   iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
                   icon={<SchoolIcon />}
                 >
-                  <h3 className="vertical-timeline-element-title">Fellow at the Data Incubator</h3>
-                  <h4 className="vertical-timeline-element-subtitle">Graduate</h4>
+                  <RedTag style={{ margin: "0 auto" }} key={'Heroku'}>
+                  Heroku
+                  </RedTag>
+                  <RedTag style={{ margin: "0 auto" }} key={'Python'}>
+                  Python
+                  </RedTag>
+                  <RedTag style={{ margin: "0 auto" }} key={'Flask'}>
+                  Flask
+                  </RedTag>
+                  <RedTag style={{ margin: "0 auto" }} key={'scikit-learn'}>
+                  scikit-learn
+                  </RedTag>
+                  <RedTag style={{ margin: "0 auto" }} key={'Spark'}>
+                  Spark
+                  </RedTag>
+                  <h3 className="vertical-timeline-element-title">Data Science Fellowship</h3>
+                  <h4 className="vertical-timeline-element-subtitle">The Data Incubator</h4>
                   <hr></hr>
                   <p>
                     Graduate of the Data Science bootcamp The Data Incubator.
@@ -187,6 +242,30 @@ class Home extends React.Component {
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   icon={<WorkIcon />}
                 >
+                  <Tag style={{ margin: "0 auto" }} key={'Python'}>
+                  Python
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'C'}>
+                  C++
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'ROOT'}>
+                  ROOT
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'GEANT'}>
+                  GEANT
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'Condor'}>
+                  Condor
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'SVN'}>
+                  CVS
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'BASH'}>
+                  BASH
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'Doxygen'}>
+                  Doxygen
+                  </Tag>
                   <h3 className="vertical-timeline-element-title">Research Associate/Physicist</h3>
                   <h4 className="vertical-timeline-element-subtitle">Brookhaven National Lab</h4>
                   <hr></hr>
@@ -200,6 +279,24 @@ class Home extends React.Component {
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   icon={<WorkIcon />}
                 >
+                  <Tag style={{ margin: "0 auto" }} key={'C'}>
+                  C++
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'ROOT'}>
+                  ROOT
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'GEANT'}>
+                  GEANT
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'Condor'}>
+                  Condor
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'CVS'}>
+                  CVS
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'BASH'}>
+                  BASH
+                  </Tag>
                   <h3 className="vertical-timeline-element-title">Research Associate/Physicist</h3>
                   <h4 className="vertical-timeline-element-subtitle">Stony Brook University</h4>
                   <hr></hr>

@@ -6,7 +6,7 @@ const Tag = ({ children, style }) => {
       <div
         style={{
           padding: "5px 10px",
-          backgroundColor: "dodgerblue",
+          backgroundColor: "rgb(233, 30, 99)",
           color: "white",
           marginRight: 8,
           marginBottom: 8,
