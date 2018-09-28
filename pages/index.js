@@ -230,8 +230,8 @@ class Home extends React.Component {
                     NLP
                     </span> methods segmenting articles into topics, indentifying most engaging and viewed content.</li>
                       <li>Work with various teams for <span style={{ color: "dodgerblue" }}>
-                    ad-hoc reporting
-                    </span> reporting and analyses on data sourced from <span style={{ color: "dodgerblue" }}>
+                    ad-hoc reporting and analyses
+                    </span> on data sourced from <span style={{ color: "dodgerblue" }}>
                     Google Analytics
                     </span>, <span style={{ color: "dodgerblue" }}>
                     Chartbeat
@@ -273,7 +273,7 @@ class Home extends React.Component {
                   <h4 className="vertical-timeline-element-subtitle">The Data Incubator</h4>
                   <hr></hr>
                   <p>
-                    Graduate of the Data Science bootcamp <a href="https://www.thedataincubator.com/">The Data Incubator</a>, an intensive program designed to give additional training to academics in technical fields with advanced degrees to help enter industry.  Focus was on hands on projects that included:
+                    Graduate of the Data Science bootcamp <a href="https://www.thedataincubator.com/" target="_blank">The Data Incubator</a>, an intensive program designed to give additional training to academics in technical fields with advanced degrees to help enter industry.  Focus was on hands on projects that included:
                     <ul>
                       <li><span style={{ color: "rgb(233, 30, 99)" }}>
                     Web scraping
@@ -296,7 +296,7 @@ class Home extends React.Component {
                       <li>Applying <span style={{ color: "rgb(233, 30, 99)" }}>
                     machine learning
                     </span> techniques to predict restaurant ratings based on rating text.</li>
-                      <li>Capstone Project: <br></br> <a href="http://citibikehelper.herokuapp.com/">CitiBike Helper App</a> <br></br>Built a <span style={{ color: "rgb(233, 30, 99)" }}>
+                      <li>Capstone Project: <br></br> <a href="http://citibikehelper.herokuapp.com/" target="_blank">CitiBike Helper App</a> <br></br>Built a <span style={{ color: "rgb(233, 30, 99)" }}>
                     web application
                     </span> around CitiBike bike sharing data in NYC.  Includes a model (<span style={{ color: "rgb(233, 30, 99)" }}>
                     Random Forest
@@ -361,12 +361,12 @@ class Home extends React.Component {
                     Physicst and research scientist designing the next generation of experiments planned at the laboratory (a planned $1B upgrade).  
                     My focus was developing <span style={{ color: "dodgerblue" }}>
                     Monte Carlo simulations
-                    </span> representing particle interactions with magnetic fields and materials in detector components (eg. <a href="https://wiki.bnl.gov/eic/index.php/Eicroot">EicROOT</a>).
+                    </span> representing particle interactions with magnetic fields and materials in detector components (eg. <a href="https://wiki.bnl.gov/eic/index.php/Eicroot" target="_blank">EicROOT</a>).
                     I worked with the magnet and accelerator scientists to refine the layout of the interaction region in the accelerator and study how different detector configurations will affect the quality of various measurements that comprise the indended scientific program, as well as estimate the required run time to achieve a certain statistical precision and <span style={{ color: "dodgerblue" }}>
                     develop analysis tools
                     </span> for measurements.
-                    <br></br><a href="https://www.bnl.gov/eic/">Main site</a>
-                    <br></br><a href="https://wiki.bnl.gov/eic/index.php/Main_Page">Wiki page</a>
+                    <br></br><a href="https://www.bnl.gov/eic/" target="_blank">Main site</a>
+                    <br></br><a href="https://wiki.bnl.gov/eic/index.php/Main_Page" target="_blank">Wiki page</a>
                   </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -397,7 +397,7 @@ class Home extends React.Component {
                   <h4 className="vertical-timeline-element-subtitle">Stony Brook University</h4>
                   <hr></hr>
                   <p>
-                    Physicist and researcher doing data analysis using data collected from the <a href="http://www.phenix.bnl.gov/">PHENIX experiment</a> at <a href="www.bnl.gov">Brookhaven National Lab</a>.  This is <a href="http://www.phenix.bnl.gov/WWW/pub/awards/html/petti_richard.html">me</a>.  
+                    Physicist and researcher doing data analysis using data collected from the <a href="http://www.phenix.bnl.gov/" target="_blank">PHENIX experiment</a> at <a href="http://www.bnl.gov/" target="_blank">Brookhaven National Lab</a>.  This is <a href="http://www.phenix.bnl.gov/WWW/pub/awards/html/petti_richard.html" target="_blank">me</a>.  
                     My focus in this position was doing <span style={{ color: "dodgerblue" }}>
                     Monte Carlo simulations
                     </span> to model a specific type of background in the experiment.
@@ -450,7 +450,7 @@ class Home extends React.Component {
                   <h4 className="vertical-timeline-element-subtitle">Stony Brook University</h4>
                   <hr></hr>
                   <p>
-                    Physicist and researcher doing data analysis using data collected from the <a href="http://www.phenix.bnl.gov/">PHENIX experiment</a> at <a href="www.bnl.gov">Brookhaven National Lab</a>.
+                    Physicist and researcher doing data analysis using data collected from the <a href="http://www.phenix.bnl.gov/" target="_blank">PHENIX experiment</a> at <a href="http://www.bnl.gov/" target="_blank">Brookhaven National Lab</a>.
                     Focus was on data analysis on terabytes of data, utilizing the computing farm at the laboratory to run analysis and simulation code.  I <span style={{ color: "dodgerblue" }}>
                     developed a novel method of signal identification</span> (a photon entering into the detector), which allowed the first quality measurement in this energy range for experiments at the facility.  This has spawned several follow up and extended analysis by others based on my work.  
                     Some interesting aspects of the work included:
@@ -503,7 +503,7 @@ class Home extends React.Component {
                   icon={<SchoolIcon />}
                  >
                   <h3 className="vertical-timeline-element-title">BS in Physics and Mathematics</h3>
-                  <h4 className="vertical-timeline-element-subtitle">Stony Brook University</h4>
+                  <h4 className="vertical-timeline-element-subtitle">SUNY Brockport</h4>
                   <p>
                     
                   </p>
