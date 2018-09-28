@@ -310,6 +310,8 @@ class Home extends React.Component {
                   <hr></hr>
                   <p>
                     Physicst and research scientist designing the next generation of experiments planned at the laboratory.
+                    <br></br><a href="https://www.bnl.gov/eic/">Main site</a>
+                    <br></br><a href="https://wiki.bnl.gov/eic/index.php/Main_Page">Wiki page</a>
                   </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
