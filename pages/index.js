@@ -174,7 +174,16 @@ class Home extends React.Component {
                   <h4 className="vertical-timeline-element-subtitle">CA Technologies</h4>
                   <hr></hr>
                   <p>
-                    Backend engineer on the business platform team designing, developing, maintaining and debugging backend services supporting the web applications built for the internal sales, marketing, and executive teams.  Main projects include a contact targeting system, a sales and marketing campaign planning tool, and a data catalog tool including an ontological layer.
+                    Backend engineer on the business platform team designing, developing, maintaining and debugging backend services supporting the web applications built for the internal sales, marketing, and executive teams.  Main projects include:
+                    <ul>
+                      <li>A contact targeting system helping sales people create targeted lists for different business focuses (Renewals, Prospecting, Cross-sell).  Includes a search component using <span style={{ color: "dodgerblue" }}>
+                    Azure Search
+                    </span> and a recommendation model I built using <span style={{ color: "dodgerblue" }}>
+                    K-means clustering
+                    </span> for cross-selling products.</li>
+                      <li>A sales and marketing campaign planning tool giving structure and record keeping for sales and marketing strategy efforts.  Includes integration to the contact targeting system and a manager's dashboard to divide up contact lists and email to individual sales reps.</li>
+                      <li>A data catalog tool with an ontological layer.</li>
+                    </ul>
                   </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -198,6 +207,9 @@ class Home extends React.Component {
                   <Tag style={{ margin: "0 auto" }} key={'BigQuery'}>
                   BigQuery
                   </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'GoogleAnalytics'}>
+                  GoogleAnalytics
+                  </Tag>
                   <Tag style={{ margin: "0 auto" }} key={'Git'}>
                    Git
                   </Tag>
@@ -205,7 +217,28 @@ class Home extends React.Component {
                   <h4 className="vertical-timeline-element-subtitle">Rodale</h4>
                   <hr></hr>
                   <p>
-                    Data Scientist on the Data Science and Growth team, focused on driving investigations to determine the specific content that are the strongest revenue drivers.  I had many responsibilities including:
+                    Data Scientist on the Data Science and Growth team, focused on driving investigations to determine the specific content that are the strongest revenue drivers.  Responsibilities and projects included:
+                    <ul>
+                      <li>Analysis applying <span style={{ color: "dodgerblue" }}>
+                    NLP
+                    </span> methods segmenting articles into topics, indentifying most engaging and viewed content.</li>
+                      <li>Work with various teams for <span style={{ color: "dodgerblue" }}>
+                    ad-hoc reporting
+                    </span> reporting and analyses on data sourced from <span style={{ color: "dodgerblue" }}>
+                    Google Analytics
+                    </span>, <span style={{ color: "dodgerblue" }}>
+                    Chartbeat
+                    </span>, <span style={{ color: "dodgerblue" }}>
+                    DFP
+                    </span>.</li>
+                      <li>Automate various reports send out via various methods such as an online dashboard, emailed Excel files, Google Sheet updates, or Dropbox uploads.</li>
+                      <li>Manage A/B testing on product websites using <span style={{ color: "dodgerblue" }}>
+                    Google Optimize
+                    </span>.</li>
+                      <li>Set up web tracking tags using <span style={{ color: "dodgerblue" }}>
+                    Google Tag Manager
+                    </span>, integrating into Google Analytics.</li>
+                    </ul>
                   </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -233,7 +266,13 @@ class Home extends React.Component {
                   <h4 className="vertical-timeline-element-subtitle">The Data Incubator</h4>
                   <hr></hr>
                   <p>
-                    Graduate of the Data Science bootcamp The Data Incubator.
+                    Graduate of the Data Science bootcamp <a href="https://www.thedataincubator.com/">The Data Incubator</a>, an intensive program designed to give additional training to academics in technical fields with advanced degrees to help enter industry.  Focus was on hands on projects that included:
+                    <ul>
+                      <li>Web scraping project to extract individual names from picture captions to build a social network, using Python, BeautifulSoup, NetworkX, regex.</li>
+                      <li>Analysis of Stack Overflow data to identify "veteran" users based on early activity history, using Spark and Scala.</li>
+                      <li>Applying machine learning techniques to predict restaurant ratings based on rating text.</li>
+                      <li>Capstone Project: CitiBike Helper App.  Build a web application around CitiBike bike sharing data in NYC.  Includes a model to predict the number of expected riders in a given area of the city based on weather condition, a live feed to show nearby stations and number of free bikes and open spots.</li>
+                    </ul>
                   </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
