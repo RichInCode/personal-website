@@ -151,30 +151,32 @@ class Home extends React.Component {
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   icon={<WorkIcon />}
                   >
-                  <Tag style={{ margin: "0 auto" }} key={'Azure'}>
-                  Azure
-                  </Tag>
-                  <Tag style={{ margin: "0 auto" }} key={'Python'}>
-                  Python
-                  </Tag>
-                  <Tag style={{ margin: "0 auto" }} key={'Flask'}>
-                  Flask
-                  </Tag>
-                  <Tag style={{ margin: "0 auto" }} key={'Neo4j'}>
-                  Neo4j
-                  </Tag>
-                  <Tag style={{ margin: "0 auto" }} key={'Redis'}>
-                  Redis
-                  </Tag>
-                  <Tag style={{ margin: "0 auto" }} key={'Redis'}>
-                  MS SQL
-                  </Tag>
-                  <Tag style={{ margin: "0 auto" }} key={'Nginx'}>
-                  Nginx
-                  </Tag>
-                  <Tag style={{ margin: "0 auto" }} key={'Git'}>
-                  Git
-                  </Tag>
+                  <div>
+                    <Tag style={{ margin: "0 auto" }} key={'Azure'}>
+                    Azure
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'Python'}>
+                    Python
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'Flask'}>
+                    Flask
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'Neo4j'}>
+                    Neo4j
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'Redis'}>
+                    Redis
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'Redis'}>
+                    MS SQL
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'Nginx'}>
+                    Nginx
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'Git'}>
+                    Git
+                    </Tag>
+                  </div>
                   <h3 className="vertical-timeline-element-title">Principal, Data Engineer</h3>
                   <h4 className="vertical-timeline-element-subtitle">CA Technologies</h4>
                   <hr></hr>
@@ -294,9 +296,7 @@ class Home extends React.Component {
                       <li>Applying <span style={{ color: "rgb(233, 30, 99)" }}>
                     machine learning
                     </span> techniques to predict restaurant ratings based on rating text.</li>
-                      <li>Capstone Project: <ScrollLink to={'CodeSamples'} smooth>
-                        <div color="green">{'CitiBike Helper App'}</div>
-                        </ScrollLink>  Built a <span style={{ color: "rgb(233, 30, 99)" }}>
+                      <li>Capstone Project: <br></br> <a href="http://citibikehelper.herokuapp.com/">CitiBike Helper App</a> <br></br>Built a <span style={{ color: "rgb(233, 30, 99)" }}>
                     web application
                     </span> around CitiBike bike sharing data in NYC.  Includes a model (<span style={{ color: "rgb(233, 30, 99)" }}>
                     Random Forest
@@ -310,7 +310,15 @@ class Home extends React.Component {
                     scikit-learn
                     </span>, and deployed on <span style={{ color: "rgb(233, 30, 99)" }}>
                     Heroku
-                    </span>.</li>
+                    </span>.<br></br><br></br>
+                                <a
+                                  href="https://github.com/richInCode/CitiBikeApp"
+                                  className="button button-pill"
+                                  target="_blank"
+                                >
+                                  View Github
+                                </a>
+                    </li>
                     </ul>
                   </p>
                 </VerticalTimelineElement>
@@ -337,7 +345,7 @@ class Home extends React.Component {
                     Condor
                     </Tag>
                     <Tag style={{ margin: "0 auto" }} key={'SVN'}>
-                    CVS
+                    SVN
                     </Tag>
                     <Tag style={{ margin: "0 auto" }} key={'BASH'}>
                     BASH
@@ -354,7 +362,9 @@ class Home extends React.Component {
                     My focus was developing <span style={{ color: "dodgerblue" }}>
                     Monte Carlo simulations
                     </span> representing particle interactions with magnetic fields and materials in detector components (eg. <a href="https://wiki.bnl.gov/eic/index.php/Eicroot">EicROOT</a>).
-                    I worked with the magnet and accelerator scientists to refine the layout of the interaction region in the accelerator and study how different detector configurations will affect the quality of various measurements that comprise the indended scientific program, as well as estimate the required run time to achieve a certain statistical precision.
+                    I worked with the magnet and accelerator scientists to refine the layout of the interaction region in the accelerator and study how different detector configurations will affect the quality of various measurements that comprise the indended scientific program, as well as estimate the required run time to achieve a certain statistical precision and <span style={{ color: "dodgerblue" }}>
+                    develop analysis tools
+                    </span> for measurements.
                     <br></br><a href="https://www.bnl.gov/eic/">Main site</a>
                     <br></br><a href="https://wiki.bnl.gov/eic/index.php/Main_Page">Wiki page</a>
                   </p>
@@ -387,7 +397,10 @@ class Home extends React.Component {
                   <h4 className="vertical-timeline-element-subtitle">Stony Brook University</h4>
                   <hr></hr>
                   <p>
-                    Physicist and researcher doing data analysis using data collected from the PHENIX experiment at Brookhaven National Lab.
+                    Physicist and researcher doing data analysis using data collected from the <a href="http://www.phenix.bnl.gov/">PHENIX experiment</a> at <a href="www.bnl.gov">Brookhaven National Lab</a>.  This is <a href="http://www.phenix.bnl.gov/WWW/pub/awards/html/petti_richard.html">me</a>.  
+                    My focus in this position was doing <span style={{ color: "dodgerblue" }}>
+                    Monte Carlo simulations
+                    </span> to model a specific type of background in the experiment.
                   </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -400,20 +413,87 @@ class Home extends React.Component {
                   <h4 className="vertical-timeline-element-subtitle">Stony Brook University</h4>
                   <hr></hr>
                   <p>
-                    PhD in the field of nuclear physics, doing big data analysis on data collected by the PHENIX experiment located at Brookhaven National Lab.
+                    PhD in the field of <span style={{ color: "rgb(233, 30, 99)" }}>
+                    nuclear physics
+                    </span>, doing <span style={{ color: "rgb(233, 30, 99)" }}>
+                    big data analysis
+                    </span> on data collected by the PHENIX experiment located at Brookhaven National Lab.
                   </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
-                  date="June 2006"
+                  date="June 2007"
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   icon={<WorkIcon />}
                   >
+                  <div>
+                    <Tag style={{ margin: "0 auto" }} key={'C'}>
+                    C++
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'ROOT'}>
+                    ROOT
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'GEANT'}>
+                    GEANT
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'Condor'}>
+                    Condor
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'CVS'}>
+                    CVS
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'BASH'}>
+                    BASH
+                    </Tag>
+                  </div>
                   <h3 className="vertical-timeline-element-title">Research Assistant/Physicist</h3>
                   <h4 className="vertical-timeline-element-subtitle">Stony Brook University</h4>
                   <hr></hr>
                   <p>
-                    Physicist and researcher doing data analysis using data collected from the PHENIX experiment at Brookhaven National Lab.
+                    Physicist and researcher doing data analysis using data collected from the <a href="http://www.phenix.bnl.gov/">PHENIX experiment</a> at <a href="www.bnl.gov">Brookhaven National Lab</a>.
+                    Focus was on data analysis on terabytes of data, utilizing the computing farm at the laboratory to run analysis and simulation code.  I <span style={{ color: "dodgerblue" }}>
+                    developed a novel method of signal identification</span> (a photon entering into the detector), which allowed the first quality measurement in this energy range for experiments at the facility.  This has spawned several follow up and extended analysis by others based on my work.  
+                    Some interesting aspects of the work included:
+                    <ul>
+                      <li>Modeled the shape of the matter produced in nuclear collisions by doing a <span style={{ color: "dodgerblue" }}>
+                    Fourier decomposition
+                    </span>.</li>
+                      <li>Modeled known sources of background using <span style={{ color: "dodgerblue" }}>
+                    Monte Carlo simulations
+                    </span> to subtract from signal, using combinatorial and event mixing techniques.</li>
+                      <li>Developed a novel technique to identify photons in the detector.</li>
+                      <li>Estimated uncertainty in the measurement to understand the statstical significance comparing to theoretical models.</li>
+                      <li>Wrote analysis, data processing and simulation code using <a href="">ROOT</a>, a <span style={{ color: "dodgerblue" }}>
+                    C++
+                    </span> based analysis package.</li>
+                    </ul>
+                    <a
+                      href="https://github.com/richInCode/phenix_code"
+                      className="button button-pill"
+                      target="_blank"
+                    >
+                      View Github
+                    </a>
+                    <a
+                      href="/static/files/Petti_Richard-thesis.pdf"
+                      className="button button-pill"
+                      target="_blank"
+                    >
+                      View Thesis
+                    </a>
+                  </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  date="September 2005"
+                  iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                  icon={<WorkIcon />}
+                  >
+                  <h3 className="vertical-timeline-element-title">Teaching Assistant</h3>
+                  <h4 className="vertical-timeline-element-subtitle">Stony Brook University</h4>
+                  <hr></hr>
+                  <p>
+                    Ran college physics laboratory classes, graded labs and exams, and help office and homework help hours.
                   </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -424,7 +504,6 @@ class Home extends React.Component {
                  >
                   <h3 className="vertical-timeline-element-title">BS in Physics and Mathematics</h3>
                   <h4 className="vertical-timeline-element-subtitle">Stony Brook University</h4>
-                  <hr></hr>
                   <p>
                     
                   </p>
