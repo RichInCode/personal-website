@@ -14,6 +14,8 @@ import WorkIcon from "../components/common/icons/WorkIcon";
 import SchoolIcon from "../components/common/icons/SchoolIcon";
 import StarIcon from "../components/common/icons/StarIcon";
 import Headroom from "react-headroom";
+import Link from "../components/link/Link";
+import { Link as ScrollLink } from "react-scroll";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import "./Home.scss";
 
@@ -148,7 +150,7 @@ class Home extends React.Component {
                   date="August 2017"
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   icon={<WorkIcon />}
-                >
+                  >
                   <Tag style={{ margin: "0 auto" }} key={'Azure'}>
                   Azure
                   </Tag>
@@ -163,6 +165,9 @@ class Home extends React.Component {
                   </Tag>
                   <Tag style={{ margin: "0 auto" }} key={'Redis'}>
                   Redis
+                  </Tag>
+                  <Tag style={{ margin: "0 auto" }} key={'Redis'}>
+                  MS SQL
                   </Tag>
                   <Tag style={{ margin: "0 auto" }} key={'Nginx'}>
                   Nginx
@@ -191,7 +196,7 @@ class Home extends React.Component {
                   date="March 2017"
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   icon={<WorkIcon />}
-                >
+                  >
                   <Tag style={{ margin: "0 auto" }} key={'AWS'}>
                   AWS
                   </Tag>
@@ -246,7 +251,7 @@ class Home extends React.Component {
                   date="March 2016"
                   iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
                   icon={<SchoolIcon />}
-                >
+                  >
                   <RedTag style={{ margin: "0 auto" }} key={'Heroku'}>
                   Heroku
                   </RedTag>
@@ -268,10 +273,44 @@ class Home extends React.Component {
                   <p>
                     Graduate of the Data Science bootcamp <a href="https://www.thedataincubator.com/">The Data Incubator</a>, an intensive program designed to give additional training to academics in technical fields with advanced degrees to help enter industry.  Focus was on hands on projects that included:
                     <ul>
-                      <li>Web scraping project to extract individual names from picture captions to build a social network, using Python, BeautifulSoup, NetworkX, regex.</li>
-                      <li>Analysis of Stack Overflow data to identify "veteran" users based on early activity history, using Spark and Scala.</li>
-                      <li>Applying machine learning techniques to predict restaurant ratings based on rating text.</li>
-                      <li>Capstone Project: CitiBike Helper App.  Build a web application around CitiBike bike sharing data in NYC.  Includes a model to predict the number of expected riders in a given area of the city based on weather condition, a live feed to show nearby stations and number of free bikes and open spots.</li>
+                      <li><span style={{ color: "rgb(233, 30, 99)" }}>
+                    Web scraping
+                    </span> project to extract individual names from picture captions to build a <span style={{ color: "rgb(233, 30, 99)" }}>
+                    social network
+                    </span>, using <span style={{ color: "rgb(233, 30, 99)" }}>
+                    Python
+                    </span>, <span style={{ color: "rgb(233, 30, 99)" }}>
+                    BeautifulSoup
+                    </span>, <span style={{ color: "rgb(233, 30, 99)" }}>
+                    NetworkX
+                    </span>, <span style={{ color: "rgb(233, 30, 99)" }}>
+                    regex
+                    </span>.</li>
+                      <li>Analysis of Stack Overflow data to identify "veteran" users based on early activity history, using <span style={{ color: "rgb(233, 30, 99)" }}>
+                    Soark
+                    </span> and <span style={{ color: "rgb(233, 30, 99)" }}>
+                    Scala
+                    </span>.</li>
+                      <li>Applying <span style={{ color: "rgb(233, 30, 99)" }}>
+                    machine learning
+                    </span> techniques to predict restaurant ratings based on rating text.</li>
+                      <li>Capstone Project: <ScrollLink to={'CodeSamples'} smooth>
+                        <div color="green">{'CitiBike Helper App'}</div>
+                        </ScrollLink>  Built a <span style={{ color: "rgb(233, 30, 99)" }}>
+                    web application
+                    </span> around CitiBike bike sharing data in NYC.  Includes a model (<span style={{ color: "rgb(233, 30, 99)" }}>
+                    Random Forest
+                    </span>) to <span style={{ color: "rgb(233, 30, 99)" }}>
+                    predict
+                    </span> the number of expected riders in a given area of the city based on weather condition, a live feed to show nearby stations and number of free bikes and open spots.  Application is built using <span style={{ color: "rgb(233, 30, 99)" }}>
+                    Python
+                    </span>, <span style={{ color: "rgb(233, 30, 99)" }}>
+                    Pandas
+                    </span>, <span style={{ color: "rgb(233, 30, 99)" }}>
+                    scikit-learn
+                    </span>, and deployed on <span style={{ color: "rgb(233, 30, 99)" }}>
+                    Heroku
+                    </span>.</li>
                     </ul>
                   </p>
                 </VerticalTimelineElement>
@@ -280,7 +319,7 @@ class Home extends React.Component {
                   date="August 2014"
                   iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   icon={<WorkIcon />}
-                >
+                  >
                   <Tag style={{ margin: "0 auto" }} key={'Python'}>
                   Python
                   </Tag>
@@ -309,7 +348,8 @@ class Home extends React.Component {
                   <h4 className="vertical-timeline-element-subtitle">Brookhaven National Lab</h4>
                   <hr></hr>
                   <p>
-                    Physicst and research scientist designing the next generation of experiments planned at the laboratory.
+                    Physicst and research scientist designing the next generation of experiments planned at the laboratory (a planned $1B upgrade).  My focus was developing Monte Carlo simulations representing particle interactions with magnetic fields and materials in detector components.
+                    I worked with the magnet and accelerator scientists to refine the layout of the interaction region in the accelerator and study how different detector configurations will affect the quality of various measurements that comprise the indended scientific program, as well as estimate the required run time to achieve a certain statistical precision.
                     <br></br><a href="https://www.bnl.gov/eic/">Main site</a>
                     <br></br><a href="https://wiki.bnl.gov/eic/index.php/Main_Page">Wiki page</a>
                   </p>
@@ -400,7 +440,7 @@ class Home extends React.Component {
             </div>
             <div className="container">
               <div className="row">
-                <PortfolioItem
+                <PortfolioItem name="capstone"
                   imageSrc={"/static/images/citibikeappscreen.PNG"}
                   title="Citi Bike Helper App"
                   description="This project was my Capstone project from my time at The Data Incubator.  It invovled created an applicition to puruse data from Citi Bike Sharing in NYC and included a model to predict ride demand in particular areas of the city."

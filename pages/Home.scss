@@ -351,9 +351,10 @@ h2 {
 }
 @media only screen and (min-width:1170px) {
   .vertical-timeline-element-content {
-    margin-left:0;
+    margin-left:10px;
     padding:1.5em;
-    width:40%
+    width:55%;
+    right:15%
   }
   .vertical-timeline-element-content::before {
     top:24px;
@@ -371,7 +372,8 @@ h2 {
   }
   .vertical-timeline-element.vertical-timeline-element--right
   .vertical-timeline-element-content,.vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content {
-    float:right
+    float:right;
+    left:15%
   }
   .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content::before,.vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content::before {
     top:24px;
