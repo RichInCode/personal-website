@@ -37,14 +37,14 @@ class Home extends React.Component {
     return (
       <div className="Home">
         <Head>
-          <title>Richard Petti - Data Scientist, Data Engineer, and Physicst</title>
-          <meta property="og:title" content="Richard Petti - Data Scientist, Data Engineer, and Physicst" />
+          <title>Richard Petti - Data Scientist, Data Engineer, and Physicist</title>
+          <meta property="og:title" content="Richard Petti - Data Scientist, Data Engineer, and Physicist" />
           <meta
             property="og:description"
-            content="Data Scientist and Engineer from Long Island, New York with a strong focus on modern frontend libraries, frameworks, and tooling."
+            content="Data Scientist and Engineer from Long Island, New York with a strong focus on modern libraries, frameworks, and tooling."
           />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://www.loucaponi.com" />
+          <meta property="og:url" content="https://www.richardpetti.com" />
           <meta
             property="og:image"
             content="../static/images/216577_203323719700899_6479271_n.jpg"
@@ -62,7 +62,7 @@ class Home extends React.Component {
                 <div className="my-name">Richard Petti</div>
               </Fade>{" "}
               <span className="spacer" />
-              <div className="my-title">Data Scientist, Data Engineer, and Physicst</div>
+              <div className="my-title">Data Scientist, Data Engineer, and Physicist</div>
               <div className="my-description">
                 Data Scientist from Long Island, New York with a strong background in Engineering and supporting application services in the cloud.
               </div>
