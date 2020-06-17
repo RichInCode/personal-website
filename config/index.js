@@ -23,16 +23,19 @@ export const homepageLinks = [
 
 export const skills = [
   "Python",
-  "C++",
   "Pandas",
   "Scikit-learn",
-  "ROOT",
+  "Dask",
   "Flask",
   "Django",
+  "C++",
+  "ROOT",
   "Neo4j",
   "MS SQL Server/Data Warehouse",
   "Postgres",
   "Azure",
   "AWS",
+  "ElasticSearch",
+  "Nifi",
   "Git",
 ];

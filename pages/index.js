@@ -37,11 +37,11 @@ class Home extends React.Component {
     return (
       <div className="Home">
         <Head>
-          <title>Richard Petti - Data Scientist, Data Engineer, and Physicist</title>
-          <meta property="og:title" content="Richard Petti - Data Scientist, Data Engineer, and Physicist" />
+          <title>Richard Petti - Data Engineer, Data Scientist, and Physicist</title>
+          <meta property="og:title" content="Richard Petti - Data Engineer, Data Scientist and Physicist" />
           <meta
             property="og:description"
-            content="Data Scientist and Engineer from Long Island, New York with a strong focus on modern libraries, frameworks, and tooling."
+            content="Data Engineer from Long Island, New York with a strong focus on modern libraries, frameworks, and tooling."
           />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://www.richardpetti.com" />
@@ -62,13 +62,14 @@ class Home extends React.Component {
                 <div className="my-name">Richard Petti</div>
               </Fade>{" "}
               <span className="spacer" />
-              <div className="my-title">Data Scientist, Data Engineer, and Physicist</div>
+              <div className="my-title">Data Engineer, Data Scientist and Physicist</div>
               <div className="my-description">
-                Data Scientist from Long Island, New York with a strong background in Engineering and supporting application services in the cloud.
+                Data Engineer from Long Island, New York with a strong focus on modern libraries, frameworks, and tooling
+                to build ETL pipelines and data services.
               </div>
               <div className="my-resume">
                 <a
-                  href="/static/files/data_scientist_resume_petti.pdf"
+                  href="/static/files/data_engineer_resume_petti_2020.pdf"
                   target="_blank"
                   className="button button-primary button-pill"
                 >
@@ -94,25 +95,51 @@ class Home extends React.Component {
 
                 <div className="col-sm-12 col-lg-9">
                   <div className="text-center">
-                    I am a Data Scientist with a strong engineering background
-                    working with modern cloud architecture and tools.  I have built upon
-                    my experiences working as a Physicist and Researcher, analyzing big data collected from nuclear colliders
-                    as well as worked on designing the next generation of collider experiments,
-                    by entering industry.
-                    I have experience working as a Data Scientist at a publishing company {" "}
+                    I am a Data Engineer, building ETLs and data solutions with modern cloud architecture and tools.
+                    Currently I am working in the alternative data space at <span style={{ color: "dodgerblue" }}>
+                    Knoema</span> after being acquired from my previous company <span style={{ color: "dodgerblue" }}>
+                    Adaptive Management</span>.  I lead the team responsible for building and maintaining ETL pipelines,
+                    keeping data flowing to our clients from over 40 data providers (and counting).  The breadth of data
+                    encountered is one of the exciting things about this role.  Technologies used include
+                    <span style={{ color: "rgb(233, 30, 99)" }}> Nifi</span>,
+                    <span style={{ color: "rgb(233, 30, 99)" }}> SQL</span>,
+                    <span style={{ color: "rgb(233, 30, 99)" }}> AWS s3</span>, and
+                    <span style={{ color: "rgb(233, 30, 99)" }}> Zeppelin Notebooks</span>.
+                    Additionally, I provide Data Engineering as a Service for clients, building custom data pipelines
+                    and related supporting infrastructure.
+                    The main technology and libraries used here include
+                    <span style={{ color: "rgb(233, 30, 99)" }}> Python</span> and
+                    <span style={{ color: "rgb(233, 30, 99)" }}> Dask</span>.
+                    Finally, I have worked on an entity resolution service, providing a system to map incoming company
+                    identifiers (names and/or tickers) provided in the data to our internal company index using our
+                    company knowledge graph stored in <span style={{ color: "rgb(233, 30, 99)" }}> Neo4j </span>,
+                    with information indexed via <span style={{ color: "rgb(233, 30, 99)" }}> ElasticSearch </span>.
+
+                    <br></br>
+
+                    In past roles, I have worked as a Backend Engineer on the business platform team at {" "}
+                    <span style={{ color: "dodgerblue" }}>
+                    CA Technologies
+                    </span>, working to make scalable, highly available, intelligent,
+                    self-service web applications supporting business operations.
+                    I have also worked as a Data Scientist at a publishing company {" "}
                     <span style={{ color: "dodgerblue" }}>
                     Rodale
                     </span>, focusing
                     on determining the main revenue drivers for the digital side of the business
                     (advertising, web products, e-commerce).
-                    I also have experience working as an Engineer on the business platform team at {" "}
-                    <span style={{ color: "dodgerblue" }}>
-                    CA Technologies
-                    </span>, working to make scalable, highly available, intelligent, 
-                    self-service web applications supporting business operations.
-                    My strenghts include software development in Python, data wrangling, applying 
-                    machine learning, and working with graph databases (specifically Neo4j).
-                    Basically I just like to figure stuff out and good at doing so.
+
+                    <br></br>
+
+                    My current success in industry is based on experiences working as a Physicist and Researcher,
+                    analyzing big data collected from nuclear colliders and designing the next
+                    generation of collider experiments.
+
+                    <br></br>
+
+                    My strengths include software development in Python, data wrangling, building data pipelines,
+                    and working with graph databases (specifically Neo4j).
+                    In short, I just like to figure stuff out and am good at doing so.
                     Flexible, agile, able to adapt and change.
                   </div>
                 </div>
@@ -145,6 +172,99 @@ class Home extends React.Component {
             </div>
             <div className="container">
               <VerticalTimeline>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  date="February 2020"
+                  iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                  icon={<WorkIcon />}
+                  >
+                  <div>
+                    <Tag style={{ margin: "0 auto" }} key={'AWS'}>
+                    AWS
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'Python'}>
+                    Python
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'Spark'}>
+                    Spark
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={"nifi"}>
+                    NIFI
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'postgres'}>
+                    postgres
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'SQL'}>
+                    SQL
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'Git'}>
+                    Git
+                    </Tag>
+                  </div>
+                  <h3 className="vertical-timeline-element-title">Head of Data Ingest NY, Lead Data Engineer</h3>
+                  <h4 className="vertical-timeline-element-subtitle">Knoema</h4>
+                  <hr></hr>
+                  <p>
+                    Joined Knoema as part of the acquisition of Adaptive Management and promoted to
+                    Lead Data Engineer for the NY Data Ingest team.  Primary responsibilities include:
+                     <ul>
+                     <li>Building and maintaining ETLs.</li>
+                     <li>Client engagement and delivery.</li>
+                     <li>Quality assurance on ETLs built and deployed.</li>
+                    </ul>
+                  </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  date="January 2019"
+                  iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                  icon={<WorkIcon />}
+                  >
+                  <div>
+                    <Tag style={{ margin: "0 auto" }} key={'AWS'}>
+                    AWS
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'Python'}>
+                    Python
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={"nifi"}>
+                    NIFI
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'Neo4j'}>
+                    Neo4j
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'ES'}>
+                    ElasticSearch
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'postgres'}>
+                    Postgres
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'SQL'}>
+                    SQL
+                    </Tag>
+                    <Tag style={{ margin: "0 auto" }} key={'Git'}>
+                    Git
+                    </Tag>
+                  </div>
+                  <h3 className="vertical-timeline-element-title">Data Engineer</h3>
+                  <h4 className="vertical-timeline-element-subtitle">Adaptive Management</h4>
+                  <hr></hr>
+                  <p>
+                    Data Engineer on the Data Ingest team, building robust ETLs to keep data flowing to clients.  Responsibilities include:
+                     <ul>
+                     <li>Ingested data from over 40 alternative data providers, dealing with many different
+                     data structure and access patterns.</li>
+                      <li>Maintained good data provider and client relationships by building reliable and robust ETL
+                      pipelines, ensuring consistent flow of data.</li>
+                      <li>Designed and built an entity resolution service to map input companies in raw data
+                      to our internal company identifiers, allowing roll up of many different sources of data
+                      under the single company umbrella.</li>
+                      <li>Data Engineering as a Service work, working directed with clients to build custom
+                      data pipelines and delivery solutions.</li>
+                      //<li>Designing and implementing a CI/CD process around custom ETLs built for clients.</li>
+                    </ul>
+                  </p>
+                </VerticalTimelineElement>
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
                   date="August 2017"
